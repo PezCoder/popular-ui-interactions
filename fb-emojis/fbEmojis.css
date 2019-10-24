@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.emojis {
+    display: flex;
+
+    /* Center align emojis w.r.t like button */
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.emojis.hidden {
+    display: none;
+}
+
+.emojis span {
+    background: teal;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.emojis span:hover {
+    transform: scale(1.1);
+}
+
+.like-emojis {
+    position: relative;
+}
